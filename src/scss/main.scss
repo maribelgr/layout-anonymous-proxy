@@ -1,7 +1,20 @@
-@import 'core/variables';
+/*@import 'core/variables';
 @import 'core/reset';
 @import 'components/links';
 @import 'layout/page';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'pages/index';
+@import 'pages/index';*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.module1-container {
+  height: 100vh;
+  background-image: url("../images/cover.jpg"); /*Se pone URL de la imagen sin enlazar al assets pq no lo necesita*/
+  background-position: center; /*Centrar imagen*/
+  background-size: cover; /*Que la imagen ocupe todo el contenedor aunque modifique tu tamaño original*/
+  background-repeat: no-repeat;
+}
