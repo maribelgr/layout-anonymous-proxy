@@ -81,3 +81,19 @@
   height: 11.7px;
   margin-top: 3px;
 }
+
+@media all and (min-width: 768px) {
+  .title {
+    font-size: 80px;
+    max-width: 690px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    max-width: 690px;
+  }
+
+  .link-button {
+    margin-bottom: 45px;
+  }
+}
