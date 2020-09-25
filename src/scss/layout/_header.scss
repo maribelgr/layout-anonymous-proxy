@@ -51,7 +51,6 @@
 .subtitle {
   font-family: $font-main;
   font-size: 16px;
-  height: 21px;
   margin-top: 10px;
   text-align: center;
   @media all and (min-width: 768px) and (max-width: 1199px) {
@@ -65,6 +64,8 @@
     max-width: 730px;
     max-height: 32px;
     margin-top: 0;
+    width: 730px;
+    height: 32px;
   }
 }
 
