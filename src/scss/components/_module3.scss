@@ -1,37 +1,135 @@
 .module3-container {
-  background-color: gold;
+  background-color: $color-ice-blue;
+  height: 624px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 30px 414px 25px;
+  grid-template-rows: repeat(5, 1fr);
   text-align: center;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    height: 397px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  @media all and (min-width: 1200px) {
+    height: 427px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
 .module3-title {
-  border: 2px solid fuchsia;
-  max-width: 290px;
   height: 30px;
+  margin: 30px 15px 0 15px;
+  font-family: $font-main-bold;
+  font-size: 24px;
+  color: $color-black;
+  text-transform: capitalize;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    grid-column: 1/4;
+    height: 45px;
+    margin: 30px 160px 0 158px;
+    font-size: 26px;
+    line-height: 45px;
+  }
 }
 
-.module3-articles {
-  border: 2px solid purple;
-  max-width: 184x;
-  height: 414px;
-}
-
-.module3-article {
-  border: 2px solid fuchsia;
-  width: 184px;
+.module3-article1 {
   height: 93px;
+  margin: 45px 68px 0 68px;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 210px;
+    height: 112px;
+    grid-column: 1/2;
+    margin: 45px 13.85px 60px 35.7px;
+  }
+}
+
+.module3-article2 {
+  height: 93px;
+  margin: 45px 68px 0 68px;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    width: 210px;
+    height: 112px;
+    grid-column: 2/3;
+    margin: 45px 13.85px 60px 13.85px;
+  }
+}
+
+.module3-article3 {
+  height: 93px;
+  margin: 45px 68px 0 68px;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    width: 210px;
+    height: 112px;
+    grid-column: 3/4;
+    margin: 45px 13.85px 60px 40px;
+  }
 }
 
 .article-title {
-  border: 2px solid fuchsia;
+  height: 30px;
+  font-family: $font-main-bold;
+  font-size: 18px;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 24px;
+    margin: 0 1.15px 0 1.15px;
+  }
+}
+
+.article-title::first-letter {
+  text-transform: uppercase;
 }
 
 .article-text {
-  border: 2px solid fuchsia;
+  height: 63px;
+  margin: 0 2px 0 2px;
+  font-family: $font-main;
+  font-size: 18px;
+  line-height: 30px;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    height: 68px;
+    font-size: 20px;
+    margin: 14px 0 0 0;
+  }
+}
+
+.article-text::first-letter {
+  text-transform: uppercase;
 }
 
 .module3-button {
-  background-color: orangered;
+  margin: 45px 68px 60px 68px;
+  width: 184px;
+  height: 45px;
+  text-transform: capitalize;
+  border-radius: 22.5px;
+  border: solid 1px $color-orange;
+  background-color: $color-orange;
+  color: $color-white;
+  font-family: $font-main;
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 0 0 40px 40px #f26002 inset, 0 0 0 0 #f26002;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  outline: none;
+}
+
+.module3-button:hover {
+  @media all and (min-width: 1200px) {
+    box-shadow: 0 0 10px 0 #f26002 inset, 0 0 10px 4px #f26002;
+    font-size: 21px;
+  }
+}
+
+.module3-button:hover::after {
+  @media all and (min-width: 1200px) {
+    content: "✩";
+    transition: 2s;
+  }
+}
+
+.module3-button:active {
+  box-shadow: 0 0 10px 0 #f26002 inset, 0 0 10px 4px #f26002;
+  font-size: 21px;
 }
