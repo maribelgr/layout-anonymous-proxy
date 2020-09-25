@@ -3,43 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Módulo 1 - Evaluación Final</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <header>
+      <div class="module1-container">
+        <a class="module1-menu" href="https://adalab.es/" target="_blank">
+          <img class="menu" src="./assets/images/ico-menu.svg" alt="menu" />
+        </a>
+        <div class="text-container">
+          <h1 class="title">anonymous proxy</h1>
+          <p class="subtitle">in hac habitasse platea dictumst.</p>
+          <a class="link-button" href="">
+            <img
+              class="scroll-button"
+              src="./assets/images/ico-scroll-down.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
+    <main>
+      <section>
+        <div class="module2-container">
+          <small class="module2-small">insomnia tips</small>
+          <h2 class="module2-title">looking through a window</h2>
+          <p class="module2-text">
+            donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
+            luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+          </p>
+          <button class="module2-button" href="">go</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>3 reasons to purchase</h2>
+        <div>
+          <article>
+            <h3>ut sed metus</h3>
+            <p>lorem ipsum dolor sit amet, consecteur.</p>
+          </article>
+          <article>
+            <h3>curabitur ac erat</h3>
+            <p>mauris mattis urna quis lorem molestie.</p>
+          </article>
+          <article>
+            <h3>morbi dictum</h3>
+            <p>aliquam in dolor et dolor tincidunt.</p>
+          </article>
+        </div>
+        <div>
+          <a class="reasons-button" href="">more reasons</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul class="articles-list">
+          <li class="article-link">
+            <a href="https://adalab.es/">articles</a>
+          </li>
+          <li class="article-link">
+            <a href="https://adalab.es/">books</a>
+          </li>
+          <li class="article-link">
+            <a href="https://adalab.es/">events</a>
+          </li>
+          <li class="article-link">
+            <a href="https://adalab.es/">reasons</a>
+          </li>
+          <li class="article-link">
+            <a href="https://adalab.es/">tips</a>
+          </li>
         </ul>
-      </main>
-
-      <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
-
-      <a class="link__github" href="https://github.com" target="_blank">GitHub</a>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es" target="_blank">Adalab</a>
-
-        </small>
-      </footer>
-
-    </div>
-    <script src="./assets/js/main.js"></script>
+      </nav>
+      <nav>
+        <ul class="twitter-list">
+          <li class="twitter-link">
+            <a href="https://adalab.es/">twitter</a>
+          </li>
+          <li class="twitter-link">
+            <a href="https://adalab.es/">instagram</a>
+          </li>
+          <li class="twitter-link">
+            <a href="https://adalab.es/">mastodon.social</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <small>©2020</small>
+        <small>we❤︎components</small>
+      </div>
+    </footer>
   </body>
 </html>
