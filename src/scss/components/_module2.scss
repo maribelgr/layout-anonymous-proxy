@@ -1,0 +1,125 @@
+.module2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 30px 15px 0 15px;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    margin: 30px 39px 0 39px;
+  }
+  @media all and (min-width: 1200px) {
+    margin: 60px 275px 0 275px;
+  }
+}
+
+.module2-small {
+  display: flex;
+  align-items: center;
+  width: 90px;
+  height: 30px;
+  font-family: $font-main;
+  font-size: 14px;
+  color: $color-light-blue;
+  text-transform: capitalize;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    width: 216px;
+    height: 30px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 360px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+.module2-title {
+  display: flex;
+  align-items: center;
+  width: 290px;
+  height: 60px;
+  margin-top: 1px;
+  font-family: $font-main-bold;
+  font-size: 24px;
+  color: $color-black;
+  text-transform: capitalize;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    width: 690px;
+    height: 45px;
+    margin-top: 0;
+    font-size: 26px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 730px;
+    height: 45px;
+    margin-top: 0;
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
+.module2-text {
+  width: 290px;
+  height: 120px;
+  margin-top: 15px;
+  font-family: $font-main;
+  font-size: 18px;
+  color: $color-grey;
+  line-height: 30px;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    width: 690px;
+    height: 60px;
+    margin-top: 30px;
+    font-size: 20px;
+    padding-right: 6px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 730px;
+    height: 60px;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+}
+
+.module2-text::first-letter {
+  text-transform: uppercase;
+}
+
+.module2-button {
+  margin-top: 30px;
+  margin-bottom: 45px;
+  text-transform: capitalize;
+  width: 76px;
+  height: 45px;
+  border-radius: 22.5px;
+  border: solid 2px $color-orange;
+  color: $color-orange;
+  font-family: $font-main;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: $color-white;
+  transition: width 2s;
+  outline: none;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    width: 91px;
+    margin-bottom: 60px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 160px;
+    margin-bottom: 60px;
+  }
+}
+.module2-button:hover {
+  @media all and (min-width: 1200px) {
+    background-color: orange;
+    color: $color-white;
+    width: 200px;
+  }
+}
+.module2-button:hover::after {
+  @media all and (min-width: 1200px) {
+    content: "➜";
+  }
+}
+.module2-button:active {
+  background-color: orange;
+  color: $color-white;
+}

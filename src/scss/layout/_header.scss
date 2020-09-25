@@ -37,6 +37,15 @@
   font-family: $font-main-bold;
   font-size: 42px;
   max-width: 290px;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 80px;
+    max-width: 690px;
+  }
+  @media all and (min-width: 1200px) {
+    font-size: 100px;
+    max-width: 730px;
+    max-height: 264px;
+  }
 }
 
 .subtitle {
@@ -45,6 +54,18 @@
   height: 21px;
   margin-top: 10px;
   text-align: center;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 24px;
+    max-width: 360px;
+    max-height: 32px;
+    margin-top: 20px;
+  }
+  @media all and (min-width: 1200px) {
+    font-size: 24px;
+    max-width: 730px;
+    max-height: 32px;
+    margin-top: 0;
+  }
 }
 
 .subtitle::first-letter {
@@ -61,26 +82,17 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 53px;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 45px;
+  }
+  @media all and (min-width: 1200px) {
+    margin-top: 30px;
+    margin-bottom: 13px;
+  }
 }
 
 .scroll-button {
   width: 20px;
   height: 11.7px;
   margin-top: 3px;
-}
-
-@media all and (min-width: 768px) {
-  .title {
-    font-size: 80px;
-    max-width: 690px;
-  }
-
-  .subtitle {
-    font-size: 24px;
-    max-width: 690px;
-  }
-
-  .link-button {
-    margin-bottom: 45px;
-  }
 }
