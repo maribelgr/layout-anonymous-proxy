@@ -1,0 +1,37 @@
+.module3-container {
+  background-color: gold;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 414px 25px;
+  text-align: center;
+}
+
+.module3-title {
+  border: 2px solid fuchsia;
+  max-width: 290px;
+  height: 30px;
+}
+
+.module3-articles {
+  border: 2px solid purple;
+  max-width: 184x;
+  height: 414px;
+}
+
+.module3-article {
+  border: 2px solid fuchsia;
+  width: 184px;
+  height: 93px;
+}
+
+.article-title {
+  border: 2px solid fuchsia;
+}
+
+.article-text {
+  border: 2px solid fuchsia;
+}
+
+.module3-button {
+  background-color: orangered;
+}
