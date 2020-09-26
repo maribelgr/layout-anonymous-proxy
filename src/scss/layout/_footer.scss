@@ -7,7 +7,7 @@
   height: 465px;
   position: relative;
   @media all and (min-width: 768px) and (max-width: 1199px) {
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
     height: 240px;
     align-items: baseline;
@@ -40,6 +40,11 @@
   justify-content: space-between;
   margin-top: 37.5px;
   padding: 0;
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 450px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .link-container {
@@ -66,6 +71,7 @@
   justify-content: space-around;
   @media all and (min-width: 768px) and (max-width: 1199px) {
     text-align: left;
+    margin-left: 39px;
   }
 }
 
