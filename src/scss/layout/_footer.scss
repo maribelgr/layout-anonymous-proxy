@@ -6,13 +6,12 @@
   align-items: center;
   height: 465px;
   position: relative;
-  @media all and (min-width: 768px) and (max-width: 1199px) {
+  @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: center;
     height: 240px;
     align-items: baseline;
   }
-  /* @media all and (min-width: 1200px) {} */
 }
 
 .footer-button {
@@ -34,7 +33,7 @@
 }
 
 .articles-container {
-  @media all and (min-width: 768px) and (max-width: 1199px) {
+  @media all and (min-width: 768px) {
     order: 1;
   }
 }
@@ -50,13 +49,17 @@
   @media all and (min-width: 768px) and (max-width: 1199px) {
     text-align: left;
     min-width: 210px;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin: 45px 15px 0 15px;
+  }
+  @media all and (min-width: 1200px) {
+    text-align: left;
+    min-width: 161px;
+    margin: 45px 15px 0 15px;
   }
 }
 
 .twitter-container {
-  @media all and (min-width: 768px) and (max-width: 1199px) {
+  @media all and (min-width: 768px) {
     order: 2;
   }
 }
@@ -72,7 +75,12 @@
   @media all and (min-width: 768px) and (max-width: 1199px) {
     text-align: left;
     min-width: 210px;
-    margin-left: 15px;
+    margin: 45px 0 0 15px;
+  }
+  @media all and (min-width: 1200px) {
+    text-align: left;
+    min-width: 159px;
+    margin: 45px 0 0 15px;
   }
 }
 
@@ -97,7 +105,12 @@
   @media all and (min-width: 768px) and (max-width: 1199px) {
     align-items: baseline;
     min-width: 210px;
-    margin-right: 15px;
+    margin: 45px 15px 0 0;
+  }
+  @media all and (min-width: 1200px) {
+    align-items: baseline;
+    min-width: 159px;
+    margin: 45px 15px 0 0;
   }
 }
 
