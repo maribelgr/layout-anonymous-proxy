@@ -16,7 +16,6 @@
     grid-template-rows: repeat(3, 1fr);
   }
 }
-
 .module3-title {
   height: 30px;
   margin: 30px 15px 0 15px;
@@ -37,7 +36,6 @@
     font-size: 32px;
   }
 }
-
 .module3-article1 {
   height: 93px;
   margin: 45px 68px 0 68px;
@@ -56,7 +54,6 @@
     justify-self: center;
   }
 }
-
 .module3-article2 {
   height: 93px;
   margin: 45px 68px 0 68px;
@@ -75,7 +72,6 @@
     justify-self: center;
   }
 }
-
 .module3-article3 {
   height: 93px;
   margin: 45px 68px 0 68px;
@@ -94,7 +90,6 @@
     justify-self: center;
   }
 }
-
 .article-title {
   height: 30px;
   font-family: $font-main-bold;
@@ -107,11 +102,9 @@
     font-size: 24px;
   }
 }
-
 .article-title::first-letter {
   text-transform: uppercase;
 }
-
 .article-text {
   height: 63px;
   margin: 0 2px 0 2px;
@@ -129,11 +122,9 @@
     margin-top: 14px;
   }
 }
-
 .article-text::first-letter {
   text-transform: uppercase;
 }
-
 .module3-button {
   margin: 45px 0 60px 0;
   width: 184px;
@@ -164,28 +155,24 @@
     justify-self: center;
   }
 }
-
 .module3-button:hover {
   @media all and (min-width: 1200px) {
     box-shadow: 0 0 10px 0 #f26002 inset, 0 0 10px 4px #f26002;
     font-size: 22px;
   }
 }
-
 .module3-button:hover::before {
   @media all and (min-width: 1200px) {
     content: "✩ ";
     transition: 2s;
   }
 }
-
 .module3-button:hover::after {
   @media all and (min-width: 1200px) {
     content: " ✩";
     transition: 2s;
   }
 }
-
 .module3-button:active {
   box-shadow: 0 0 10px 0 #f26002 inset, 0 0 10px 4px #f26002;
   font-size: 21px;
