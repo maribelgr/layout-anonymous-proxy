@@ -98,9 +98,10 @@
 }
 
 .module3-button {
-  margin: 45px 68px 60px 68px;
+  margin: 45px 0 60px 0;
   width: 184px;
   height: 45px;
+  justify-self: center;
   text-transform: capitalize;
   border-radius: 22.5px;
   border: solid 1px $color-orange;
