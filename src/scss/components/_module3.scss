@@ -30,6 +30,12 @@
     font-size: 26px;
     line-height: 45px;
   }
+  @media all and (min-width: 1200px) {
+    grid-column: 1/4;
+    height: 45px;
+    margin-top: 60px;
+    font-size: 32px;
+  }
 }
 
 .module3-article1 {
@@ -37,6 +43,13 @@
   margin: 45px 68px 0 68px;
   @media all and (min-width: 768px) and (max-width: 1199px) {
     max-width: 210px;
+    height: 112px;
+    grid-column: 1/2;
+    margin: 45px 0px 60px 0;
+    justify-self: center;
+  }
+  @media all and (min-width: 1200px) {
+    max-width: 350px;
     height: 112px;
     grid-column: 1/2;
     margin: 45px 0px 60px 0;
@@ -54,6 +67,13 @@
     margin: 45px 0 60px 0;
     justify-self: center;
   }
+  @media all and (min-width: 1200px) {
+    max-width: 350px;
+    height: 112px;
+    grid-column: 2/3;
+    margin: 45px 0px 60px 0;
+    justify-self: center;
+  }
 }
 
 .module3-article3 {
@@ -66,6 +86,13 @@
     margin: 45px 0 60px 0;
     justify-self: center;
   }
+  @media all and (min-width: 1200px) {
+    max-width: 350px;
+    height: 112px;
+    grid-column: 3/4;
+    margin: 45px 0px 60px 0;
+    justify-self: center;
+  }
 }
 
 .article-title {
@@ -75,6 +102,9 @@
   @media all and (min-width: 768px) and (max-width: 1199px) {
     font-size: 24px;
     margin: 0 1.15px 0 1.15px;
+  }
+  @media all and (min-width: 1200px) {
+    font-size: 24px;
   }
 }
 
@@ -92,6 +122,11 @@
     height: 68px;
     font-size: 20px;
     margin: 14px 0 0 0;
+  }
+  @media all and (min-width: 1200px) {
+    font-size: 20px;
+    height: 68px;
+    margin-top: 14px;
   }
 }
 
@@ -122,18 +157,31 @@
     grid-column: 1/4;
     justify-self: center;
   }
+  @media all and (min-width: 1200px) {
+    width: 255px;
+    margin: 0 0 60px 0;
+    grid-column: 1/4;
+    justify-self: center;
+  }
 }
 
 .module3-button:hover {
   @media all and (min-width: 1200px) {
     box-shadow: 0 0 10px 0 #f26002 inset, 0 0 10px 4px #f26002;
-    font-size: 21px;
+    font-size: 22px;
+  }
+}
+
+.module3-button:hover::before {
+  @media all and (min-width: 1200px) {
+    content: "✩ ";
+    transition: 2s;
   }
 }
 
 .module3-button:hover::after {
   @media all and (min-width: 1200px) {
-    content: "✩";
+    content: " ✩";
     transition: 2s;
   }
 }

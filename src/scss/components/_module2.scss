@@ -109,17 +109,17 @@
 }
 .module2-button:hover {
   @media all and (min-width: 1200px) {
-    background-color: orange;
+    background-color: $color-orange;
     color: $color-white;
     width: 200px;
   }
 }
 .module2-button:hover::after {
   @media all and (min-width: 1200px) {
-    content: "➜";
+    content: " ➜";
   }
 }
 .module2-button:active {
-  background-color: orange;
+  background-color: $color-orange;
   color: $color-white;
 }
